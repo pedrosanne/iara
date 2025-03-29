@@ -27,7 +27,7 @@ export const BrokerFrame = () => {
       <h2 className="text-xs font-medium mb-3">Abra sua conta na Corretora</h2>
       <div className="w-full overflow-hidden rounded-lg border border-[hsl(var(--border))]" style={{ height: iframeHeight }}>
         <iframe
-          src="https://avantbroker.com/pt/signUp?ref=cm8lvf5oq00riiydbi283xnib"
+          src="https://avantbroker.com/pt/chart/?ref=cm8lvf5oq00riiydbi283xnib"
           className="w-full h-full"
           style={{ border: 'none' }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

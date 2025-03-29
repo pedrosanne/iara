@@ -18,7 +18,7 @@ export const priceRanges: Record<AssetType, Record<string, PriceRange>> = {
     'US 30': { min: 38500, max: 39000 }
   },
   crypto: {
-    'Bitcoin': { min: 65000, max: 67000 },
+    'Bitcoin': { min: 85000, max: 77000 },
     'Doge': { min: 0.15, max: 0.16 },
     'Ethereum': { min: 3500, max: 3600 },
     'Cardano': { min: 0.6, max: 0.65 },

@@ -4,7 +4,7 @@ import { TrendingUp, ExternalLink } from 'lucide-react';
 export const BrokerButton = () => {
   return (
     <a
-      href="https://trade.avalonbroker.io/register?aff=410584&aff_model=revenue&afftrack=neurotrader"
+      href="https://avantbroker.com/pt/chart/?ref=cm8lvf5oq00riiydbi283xnib"
       target="_blank"
       rel="noopener noreferrer"
       className="group relative flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
