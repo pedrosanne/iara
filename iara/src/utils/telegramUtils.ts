@@ -3,8 +3,8 @@ import { ptBR } from 'date-fns/locale';
 import { ForecastDetails } from './forecastUtils';
 import { TimeFrame } from '../types';
 
-const TELEGRAM_BOT_TOKEN = '7652896023:AAGWxntCnkkh1u9LTjeqI_YN-VYmZwZWsgY';
-const TELEGRAM_CHANNEL_ID = '-1002116386836';
+const TELEGRAM_BOT_TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+const TELEGRAM_CHANNEL_ID = 'xxxxxxxxxx';
 
 const formatTimeFrame = (timeFrame: TimeFrame): string => {
   switch (timeFrame) {
