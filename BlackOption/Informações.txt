@@ -1,0 +1,14 @@
+Link do marketplace do diretório oficial:
+https://codecanyon.net/item/vinance-digital-trading-platform/48035306
+
+Versão desse diretório:
+Version 2.3 – 01st November 2024
+[ADD] Binary Trade Feature
+[ADD] Configure Binary Trade in Coin Pairs
+[ADD] Multiple Duration in Binary Trade
+[ADD] Control Invest Limit in Coin Pairs
+[ADD] Control Increment & Decrement Invest Amount
+[ADD] Control Coin Pairs for SPOT, Binary Trade
+[ADD] Binary Trade History
+[PATCH] Latest System Patch
+[PATCH] Latest Security Patch

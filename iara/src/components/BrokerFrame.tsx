@@ -52,7 +52,7 @@ export const BrokerFrame = () => {
             allowFullScreen
           />
           <iframe
-            src="https://avantbroker.com"
+            src="https://avantbroker.com/pt/chart"
             className="w-full h-full flex-shrink-0"
             style={{ border: 'none' }}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

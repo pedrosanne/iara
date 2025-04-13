@@ -1,0 +1,199 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinance - Account Recovery</title>
+
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/logo_icon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/global/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../assets/admin/css/vendor/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="../../assets/global/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/global/css/line-awesome.min.css">
+
+    
+    <link rel="stylesheet" href="../../assets/global/css/select2.min.css">
+    <link rel="stylesheet" href="../../assets/global/css/iziToast_custom.css">
+    <link rel="stylesheet" href="../../assets/admin/css/app.css">
+
+
+    </head>
+
+<body>
+        <div class="login-main" style="background-image: url('../../assets/admin/images/login.jpg')">
+        <div class="container custom-container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-11">
+                    <div class="login-area">
+                        <div class="login-wrapper">
+                            <div class="login-wrapper__top">
+                                <h3 class="title text-white">Recover Account</h3>
+                            </div>
+                            <div class="login-wrapper__body">
+                                <form action="reset.html" method="POST" class="login-form verify-gcaptcha">
+                                    <input type="hidden" name="_token" value="YMGHjk7kczgFQF5shWSlv7cAKUwIFBkOSBEeitDv" autocomplete="off">                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" name="email" class="form-control" value="" required>
+                                    </div>
+                                    <div class="mb-3">
+        
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div class="g-recaptcha" data-sitekey="6LdPC88fAAAAADQlUf_DV6Hrvgm-pZuLJFSLDOWV" data-callback="verifyCaptcha"></div>
+<div id="g-recaptcha-error"></div>    </div>
+
+                                        <button type="submit" class="btn cmn-btn w-100">Submit</button>
+                                    <div class="text-center mt-3">
+                                        <a href="../../admin.html" class="text-white"><i class="las la-sign-in-alt" aria-hidden="true"></i>Back to Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.my_pusher = {
+            'app_key': "",
+            'app_cluster': "",
+            'base_url': "https://script.viserlab.com/vinance"
+        }
+        window.allow_decimal = "4";
+    </script>
+
+    <script src="../../assets/global/js/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/global/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/admin/js/vendor/bootstrap-toggle.min.js"></script>
+
+
+    <link href="../../assets/global/css/iziToast.min.css" rel="stylesheet">
+<link href="../../assets/global/css/iziToast_custom.css" rel="stylesheet">
+<script src="../../assets/global/js/iziToast.min.js"></script>
+
+<script>
+    "use strict";
+    const colors = {
+        success: '#28c76f',
+        error: '#eb2222',
+        warning: '#ff9f43',
+        info: '#1e9ff2',
+    }
+
+    const icons = {
+        success: 'fas fa-check-circle',
+        error: 'fas fa-times-circle',
+        warning: 'fas fa-exclamation-triangle',
+        info: 'fas fa-exclamation-circle',
+    }
+
+    const notifications = [];
+    const errors = [];
+
+
+    const triggerToaster = (status, message) => {
+        iziToast[status]({
+            title: status.charAt(0).toUpperCase() + status.slice(1),
+            message: message,
+            position: "topRight",
+            backgroundColor: '#fff',
+            icon: icons[status],
+            iconColor: colors[status],
+            progressBarColor: colors[status],
+            titleSize: '1rem',
+            messageSize: '1rem',
+            titleColor: '#474747',
+            messageColor: '#a2a2a2',
+            transitionIn: 'obunceInLeft'
+        });
+    }
+
+    if (notifications.length) {
+        notifications.forEach(element => {
+            triggerToaster(element[0], element[1]);
+        });
+    }
+
+    if (errors.length) {
+        errors.forEach(error => {
+            triggerToaster('error', error);
+        });
+    }
+
+    function notify(status, message) {
+        if (typeof message == 'string') {
+            triggerToaster(status, message);
+        } else {
+            $.each(message, (i, val) => triggerToaster(status, val));
+        }
+    }
+</script>
+    
+    <script src="../../assets/global/js/nicEdit.js"></script>
+
+    <script src="../../assets/global/js/select2.min.js"></script>
+    <script src="../../assets/admin/js/app.js"></script>
+    <script src="../../assets/admin/js/custom.js"></script>
+
+    
+    <script>
+        "use strict";
+        bkLib.onDomLoaded(function() {
+            $(".nicEdit").each(function(index) {
+                $(this).attr("id", "nicEditor" + index);
+                new nicEditor({
+                    fullPanel: true
+                }).panelInstance('nicEditor' + index, {
+                    hasPanel: true
+                });
+            });
+        });
+        (function($) {
+            $(document).on('mouseover ', '.nicEdit-main,.nicEdit-panelContain', function() {
+                $('.nicEdit-main').focus();
+            });
+
+            $('.breadcrumb-nav-open').on('click', function() {
+                $(this).toggleClass('active');
+                $('.breadcrumb-nav').toggleClass('active');
+            });
+
+            $('.breadcrumb-nav-close').on('click', function() {
+                $('.breadcrumb-nav').removeClass('active');
+            });
+
+            if ($('.topTap').length) {
+                $('.breadcrumb-nav-open').removeClass('d-none');
+            }
+        })(jQuery);
+    </script>
+
+            <script>
+            (function($) {
+                "use strict"
+                $('.verify-gcaptcha').on('submit', function() {
+                    var response = grecaptcha.getResponse();
+                    if (response.length == 0) {
+                        document.getElementById('g-recaptcha-error').innerHTML = '<span class="text--danger">Captcha field is required.</span>';
+                        return false;
+                    }
+                    return true;
+                });
+
+                window.verifyCaptcha = () => {
+                    document.getElementById('g-recaptcha-error').innerHTML = '';
+                }
+            })(jQuery);
+        </script>
+    
+
+</body>
+
+</html>
