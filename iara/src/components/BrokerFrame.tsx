@@ -45,14 +45,14 @@ export const BrokerFrame = () => {
           style={isMobile ? { transform: `translateY(-${activeFrame * 100}%)` } : { transform: `translateX(-${activeFrame * 100}%)` }}
         >
           <iframe
-            src="https://www.homebroker.com/pt/sign-in"
+            src="https://www.homebroker.com/ref/0RWWcBvQ/"
             className="w-full h-full flex-shrink-0"
             style={{ border: 'none' }}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
           <iframe
-            src="https://www.homebroker.com/pt/invest"
+            src="https://www.homebroker.com/ref/0RWWcBvQ/"
             className="w-full h-full flex-shrink-0"
             style={{ border: 'none' }}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
